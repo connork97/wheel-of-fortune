@@ -35,6 +35,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.1em;
     border: 4px solid rgba(0, 0, 0, 0.75);
+    cursor: pointer;
 }
 
 .container .spinBtn::before {
@@ -60,6 +61,7 @@ body {
     box-shadow: 0 0 0 5px #333,
         0 0 0 15px #FFF,
         0 0 0 18px #111;
+    transition: transform 5s ease-in-out;
 }
 
 .container .wheel .number {
@@ -74,7 +76,7 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
-    cursor: pointer;
+    cursor: auto;
 }
 
 .container .wheel .number span {
