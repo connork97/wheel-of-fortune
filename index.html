@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wheel of Fortune</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="spinBtn">Spin</div>
+            <div class="wheel">
+                <div class="number" style="--i:1;--clr:#FF0000"><span>1</span></div>
+                <div class="number" style="--i:2;--clr:#FF7F00"><span>2</span></div>
+                <div class="number" style="--i:3;--clr:#FFFF00"><span>3</span></div>
+                <div class="number" style="--i:4;--clr:#00FF00"><span>4</span></div>
+                <div class="number" style="--i:5;--clr:#0000FF"><span>5</span></div>
+                <div class="number" style="--i:6;--clr:#4B0082"><span>6</span></div>
+                <div class="number" style="--i:7;--clr:#9400D3"><span>7</span></div>
+                <div class="number" style="--i:8;--clr:#FFC0CB"><span>8</span></div>
+            </div>
+        </div>
+<!--      <script>
+            let wheel = document.querySelector(".wheel");
+            let spinBtn = document.querySelector(".spinBtn");
+            let value = Math.ceil(Math.random() * 3600);
+
+            spinBtn.onclick = function() {
+                wheel.style.transform = "rotate(" + value + "deg)";
+            }
+        </script>
+-->
+    </body>
+</html>
