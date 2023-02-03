@@ -15,6 +15,18 @@ body {
     background-size: cover;
 }
 
+#name {
+    z-index: 10;
+}
+
+#submit {
+    z-index: 10;
+}
+
+input[type=text] {
+    z-index: 10;
+}
+
 .welcome, .rules {
     text-align: center;
     position: absolute;
@@ -38,22 +50,24 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 25vh;
-    scale: 2;
+    top: 10vh;
+    scale: 1.5;
 }
 
+/*
 .name-box-submit {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 32.5vh;
-    scale: 1.75;
+    top: 15vh;
+    scale: 1.5;
 }
+*/
 
 .container {
     position: absolute;
-    top: 40vh;
+    top: 42.5vh;
     width: 400px;
     height: 400px;
     display: flex;
@@ -67,7 +81,7 @@ body {
     height: 60px;
     background: #FFFFFF;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +117,7 @@ body {
     transition: transform 5s ease-in-out;
 }
 
-.container .wheel .number {
+.container .wheel .player {
     position: absolute;
     width: 50%;
     height: 50%;
@@ -118,7 +132,7 @@ body {
     cursor: auto;
 }
 
-.container .wheel .number span {
+.container .wheel .player span {
     position: relative;
     transform: rotate(45deg);
     font-size: 1.25em;
@@ -127,7 +141,7 @@ body {
     text-shadow: 1px 2px 1px rgba(0,0,0,0.75);
 }
 
-.container .wheel .number span::after {
+.container .wheel .player span::after {
     position: absolute;
     font-size: 0.75em;
     font-weight: 500;
