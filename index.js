@@ -20,38 +20,11 @@ function addName() {
 let submitBtn = document.getElementById('submit');
 submitBtn.addEventListener('click',addName);
 
+let enterName = document.getElementById('name');
 
-/*
-function getName() {
-    newName.innerHTML = userName.value;
-}
-
-submitBtn.addEventListener('click',addName);
-
-
-/*
-
-const oldPlayer = document.getElementById("player-1").value;
-const newPlayer = document.getElementById("name-box").value
-function addPlayer() {
-    oldPlayer.replace(/Spin Again/, newPlayer.value);
-    //document.getElementById("player-1").innerHTML = newPlayer;
-}
-
-/*function addPlayer() {
-    for (let i = 1; i < 9; i++) {
-
+enterName.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById('submit').click();
     }
-}
-
-----------
-
-const name = document.getElementById("name").value;
-const oldName = document.getElementById("player-1").value;
-const newName = oldName.replace(/player-1/, "name");
-
-function getName() {
-    var newPlayerName = document.getElementById("name").value;
-    localStorage.setItem("player.span", newName);
-}
-*/
+});

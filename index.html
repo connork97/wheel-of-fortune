@@ -6,19 +6,15 @@
     </head>
     <body>
         <h1 class="welcome">Welcome to "Who gets to teach the belay lesson!?"</h1>
-        <h2 class="rules">To play the game, first click on your favorite color.  Then replace the text with your name and click out.
-            <br>Repeat for however many players and click "Spin" to find the lucky winner!</h2>
-        <form class="name-box">
-            <!--<label for="name" class="name-box">-->
+        <h2 class="rules">To play the game, first enter your name and click "Submit".
+            <br>Repeat for however many people are playing and click "Send It!" to find out who the lucky winner is!</h2>
+        <form class="name-box" onsubmit="return false">
                 <input type="text" id="name" name="name" placeholder="Your Name Here" style="text-align:center;">
-                
-            <!--</label>    
-            <label for="name" class="name-box-submit"> -->
-                <button type="button" id="submit" class="submit">Click Me</button>
-            <!--</label>-->
+                <br>
+                <button type="reset" id="submit" class="submit">Submit</button>
         </form>
         <div class="container">
-            <div class="spinBtn">Spin</div>
+            <div class="spinBtn">Send It!</div>
             <div class="wheel">
                 <div class="player" id="player-1" style="--i:1;--clr:#FF0000"><span contenteditable="true">Spin Again</span></div>
                 <div class="player" id="player-2" style="--i:2;--clr:#FF7F00"><span contenteditable="true">Spin Again</span></div>
